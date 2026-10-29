@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daniel Tanguila — Back-end & Machine Learning Developer</title>
+<meta name="description" content="Portfolio of Daniel Tanguila, back-end developer and machine learning engineer from Angola.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#fff; --fg:#000; --muted:#555; --line:#000; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html { scroll-behavior:smooth; }
+  body { background:var(--bg); color:var(--fg); font:400 16px/1.65 "Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif; -webkit-font-smoothing:antialiased; }
+  a { color:inherit; text-decoration-thickness:1px; text-underline-offset:3px; }
+  a:hover { text-decoration-thickness:2px; }
+  :focus-visible { outline:2px solid var(--fg); outline-offset:3px; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 24px; }
+
+  header { padding:32px 0 0; }
+  nav { display:flex; gap:24px; flex-wrap:wrap; font-size:14px; }
+  nav a { text-decoration:none; color:var(--muted); }
+  nav a:hover { color:var(--fg); text-decoration:underline; }
+
+  .hero { padding:96px 0 88px; }
+  h1 { font:400 clamp(56px,11vw,120px)/0.95 "Instrument Serif",Georgia,"Times New Roman",serif; letter-spacing:-0.02em; }
+  .hero p { margin-top:28px; max-width:34em; font-size:20px; line-height:1.5; }
+  .hero .meta { margin-top:16px; font-size:15px; color:var(--muted); }
+
+  section { border-top:1px solid var(--line); padding:40px 0 56px; display:grid; grid-template-columns:200px 1fr; gap:24px 48px; }
+  h2 { font:400 28px/1.2 "Instrument Serif",Georgia,serif; }
+  .item + .item { margin-top:36px; }
+  h3 { font-size:17px; font-weight:500; line-height:1.4; }
+  .when { color:var(--muted); font-size:14px; margin-top:2px; }
+  .item p { margin-top:10px; max-width:40em; }
+  .item ul { margin:10px 0 0 18px; max-width:40em; }
+  .item li + li { margin-top:4px; }
+  .link { display:inline-block; margin-top:12px; font-size:15px; }
+  .link.pending { color:var(--muted); text-decoration:none; cursor:default; border-bottom:1px dashed var(--muted); }
+  .skills { display:grid; grid-template-columns:1fr 1fr; gap:20px 32px; }
+  .skills p { margin-top:4px; color:var(--muted); font-size:15px; }
+  .contact a { display:block; width:max-content; }
+  .contact li { list-style:none; }
+  .contact ul { margin:0; }
+  footer { border-top:1px solid var(--line); padding:24px 0 48px; font-size:14px; color:var(--muted); }
+
+  @media (max-width:720px) {
+    section { grid-template-columns:1fr; gap:20px; padding:32px 0 44px; }
+    .hero { padding:64px 0 56px; }
+    .skills { grid-template-columns:1fr; }
+  }
+  @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Sections">
+      <a href="#profile">Profile</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <h1>Daniel Tanguila</h1>
+    <p>Back-end developer and machine learning practitioner building software that works in the real world.</p>
+    <p class="meta">Angola &middot; Self-taught data science student &middot; Computer Engineering undergraduate</p>
+  </div>
+
+  <section id="profile">
+    <h2>Profile</h2>
+    <div>
+      <div class="item">
+        <p>I am an Angolan back-end developer with a focus on machine learning. I started with electronics and telecommunications, building devices with Arduino and ESP32, then moved into software and artificial intelligence.</p>
+        <p>I am teaching myself data science, and I am now studying Computer Engineering at university. I like the deep understanding of things that i can achive through computing and other sciences.</p>
+        <p>I am also a co-founder of DevTool Sistemas, where we build software systems for other companies and we are also developing some projects of our to solve local problems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div>
+      <div class="item">
+        <h3>BSc in Computer Engineering</h3>
+        <div class="when">Universidade Gregório Semedo &middot; 2026/2027 &middot; First year</div>
+      </div>
+      <div class="item">
+        <h3>Electronics and Telecommunications</h3>
+        <div class="when">Instituto Médio Técnico São Benedito &middot; 2022/2023 – 2025/2026</div>
+        <p>Technical secondary course. Worked on embedded systems projects with Arduino and ESP32, and completed a computer vision capstone.</p>
+      </div>
+      <div class="item">
+        <h3>Data Science</h3>
+        <div class="when">Self-taught &middot; Ongoing</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div>
+      <div class="item">
+        <h3>Curandeiro</h3>
+        <div class="when">Machine learning &middot; Healthcare</div>
+        <p>A system that uses an AI model to detect malaria in microscopic images of blood.</p>
+        <!-- Replace href="#" below with the link to the Curandeiro demo video 
+        <a class="link" href="https://www.youtube.com/watch?v=qga9wbx_5ws" data-video>Watch the demo video</a>-->
+      </div>
+      <div class="item">
+        <h3>Real-time shoplifting detection</h3>
+        <div class="when">Computer vision &middot; Final project, secondary school</div>
+        <p>An AI model integrated with cameras to detect theft as it happens.</p>
+        <!-- Replace href="#" below with the link to the shoplifting detection video -->
+        <a class="link" href="https://lnkd.in/p/d77HyuRu" data-video>Video posted on my coworker´s LinkedIn profile</a>
+      </div>
+      <div class="item">
+        <h3>Smart home</h3>
+        <div class="when">Arduino &middot; ESP32 &middot; Mobile app</div>
+        <p>An automated house, also controllable from a mobile app:</p>
+        <ul>
+          <li>Doors that open when people approach</li>
+          <li>Windows that close when it rains</li>
+          <li>Garden lights that turn on automatically at night</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3>School management system</h3>
+        <div class="when">Prototype</div>
+        <p>A prototype management system built for my secondary school.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div>
+      <div class="item">
+        <h3>Co-founder, DevTool Sistemas</h3>
+        <div class="when">Present &middot; <a href="https://devtoolsistemas.com/" target="_blank" rel="noopener">devtoolsistemas.com</a></div>
+        <p>Building the company and developing a system for a client company.</p>
+      </div>
+      <div class="item">
+        <h3>Back-end Developer, Intern at Mark Seller</h3>
+        <div class="when"><a href="https://marksellerangola.com/" target="_blank" rel="noopener">marksellerangola.com</a></div>
+        <p>Worked on back-end development during my internship.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><h3>Back-end</h3><p>PHP, Python</p></div>
+      <div><h3>Machine learning</h3><p>Computer vision, Pytorch, model training</p></div>
+      <div><h3>Data science</h3><p>Data preprocessing and visualization. Model training</p></div>
+      <div><h3>Embedded systems</h3><p>Arduino, ESP32</p></div>
+      <div><h3>Learning</h3><p>C++, C, Math</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <ul>
+        <!-- Replace these placeholders with your real details -->
+        <li><a href="mailto:your@email.com">danielgouveiatanguiladenny@gmail.com</a></li>
+        <li><a href="https://github.com/your-username" target="_blank" rel="noopener">http://github.com/Tanguila9/</a></li>
+        <li><a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">https://www.linkedin.com/in/daniel-tanguila-019185418/</a></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="y">2026</span> Daniel Tanguila</div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  // Videos without a real link yet show a muted "coming soon" label.
+  document.querySelectorAll('a[data-video]').forEach(function (a) {
+    var h = a.getAttribute('href');
+    if (!h || h === '#') {
+      a.classList.add('pending');
+      a.textContent = 'Demo video coming soon';
+      a.removeAttribute('href');
+    } else {
+      a.target = '_blank'; a.rel = 'noopener';
+    }
+  });
+</script>
+</body>
+</html>
